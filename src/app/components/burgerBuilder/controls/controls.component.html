@@ -1,0 +1,41 @@
+<div class="main">
+  <div class="col-md-3- col-sm-6- control-container">
+    <div class="login-form">
+      <p>
+        Current Price: <strong>{{ state?.totalPrice | currency }}</strong>
+      </p>
+
+      <div
+        class="build-control"
+        *ngFor="let ingredient of controlsIngredients; let i = index"
+      >
+        <div class="label">{{ ingredient | titlecase }}</div>
+        <button
+          class="btn btn-secondary"
+          (click)="removeIngredient(ingredient)"
+          [disabled]="state?.ingredients[ingredient] == 0"
+        >
+          -
+        </button>
+        <button class="btn btn-warning" (click)="addIngredient(ingredient)">
+          +
+        </button>
+      </div>
+
+      <p class="order-btn">
+        <button
+          type="button"
+          class="btn btn-warning"
+          data-toggle="modal"
+          data-target="#confirmOrderModal"
+          [disabled]="!state?.purchasable"
+        >
+          ORDER NOW
+        </button>
+      </p>
+    </div>
+  </div>
+
+  <app-order-summary [state]="state"></app-order-summary>
+
+</div>

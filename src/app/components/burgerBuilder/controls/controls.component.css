@@ -1,0 +1,31 @@
+.control-container {
+  margin: auto;
+  width: 270px;
+}
+.control-container p {
+  text-align: center;
+}
+.control-container .order-btn {
+  margin-top: 20px;
+}
+.build-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.build-control button {
+  display: block;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  cursor: pointer;
+}
+.build-control button:disabled {
+  cursor: default;
+}
+.label {
+  padding: 10px;
+  font-weight: bold;
+  width: 90px;
+}

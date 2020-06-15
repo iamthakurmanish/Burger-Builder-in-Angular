@@ -1,0 +1,38 @@
+.salad {
+  width: 90%;
+  height: 7%;
+  background: linear-gradient(#228c1d, #91ce50);
+  margin: 2% auto;
+  border-radius: 20px;
+}
+
+.tomato {
+  width: 80%;
+  height: 5%;
+  background: linear-gradient(#fc644d, #e34132);
+  margin: 2% auto;
+}
+
+.cheese {
+  width: 91%;
+  height: 4.5%;
+  background: linear-gradient(#f4d004, #d6bb22);
+  border-radius: 20px;
+  margin: 2% auto;
+}
+
+.onion {
+  width: 80%;
+  height: 6%;
+  background: linear-gradient(#e6d2db, #b96c93);
+  border-radius: 15px;
+  margin: 2% auto;
+}
+
+.egg {
+  width: 82%;
+  height: 7%;
+  background: linear-gradient(#f6ce92, yellow); /*Egg*/
+  border-radius: 10px;
+  margin: 2% auto;
+}
