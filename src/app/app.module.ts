@@ -8,6 +8,9 @@ import { BurgerIngredientComponent } from './components/burgerBuilder/burger/bur
 import { ControlsComponent } from './components/burgerBuilder/controls/controls.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { OrderSummaryComponent } from './components/orders/summary/order-summary.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './components/login/login.component';
+import { OrdersComponent } from './components/orders/list/orders.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { OrderSummaryComponent } from './components/orders/summary/order-summary
     BurgerIngredientComponent,
     ControlsComponent,
     OrderSummaryComponent,
+    OrdersComponent,
+    LoginComponent,
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
